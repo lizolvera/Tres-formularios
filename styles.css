@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: burlywood;
+    margin: 0;
+}
+
+.form-contenedor {
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+}
+
+.form-control:invalid {
+    border-color: #f44336;
+}
+
+.form-control:valid {
+    border-color: #4CAF50;
+}
+
+.invalid-feedback {
+    display: none;
+    color: #f44336;
+}
+
+.form-control.is-invalid ~ .invalid-feedback {
+    display: block;
+}
